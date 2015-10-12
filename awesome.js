@@ -26,7 +26,7 @@ var congratWords = [
 ];
 
 var previousWord;
-var clickAmount = 0;
+var clickCount = 0;
 
 var getRandomWord = function(words){
     var word=words[Math.floor(Math.random() * words.length)];
@@ -54,8 +54,8 @@ var hideDemotivationVideo = function(){
 };
 
 var motivOrDemotiv = function(){
-    if (clickAmount<10) {motivation();} else {DEmotivation();};
-    clickAmount=clickAmount+1;
+    if (clickCount<6) {motivation();} else {DEmotivation();};
+    clickCount=clickCount+1;
 };
 
 var motivation = function(){
@@ -81,5 +81,5 @@ var wellDone = function(){
     document.getElementById("motivation").innerHTML=getRandomWord(congratWords);
     hideMotivationVideo();
     hideDemotivationVideo();
-    clickAmount=0;
+    clickCount=0;
 };
