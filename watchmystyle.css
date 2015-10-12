@@ -1,0 +1,62 @@
+body{
+    background-color:#ffffff;
+    -webkit-transition: background 2s linear;
+    -moz-transition: background 2s linear;
+    transition: background 2s linear;
+}
+
+.wrapper{
+    text-align: center;
+    margin:0;
+    margin-top: 10%;
+}
+
+/*.wrapper:hover{
+    color: #808080;
+    background-color: #000000;
+}
+*/
+.yes-or-no{
+    font-size: 72px;
+    font-weight: bold;
+}
+.motivation{
+    margin-top:8px;
+    font-size: 32px;
+    margin-bottom:8px;
+}
+.fancybutton{
+    background-color:inherit;
+    color:inherit;
+    border:none;
+    border-bottom:1px solid dimgray;
+    cursor:pointer;
+    text-decoration:none;
+    margin-top:2px;
+    font-size:32px;
+}
+
+.fancybutton:hover{
+}
+
+.fancybutton:active{
+    position:relative;
+    top:1px;
+}
+.yes{
+    border-left:4px solid rgba(0,128,0,0.5);
+}
+.notyet{
+    border-right:4px solid rgba(128,0,0,0.5);
+}
+
+.yes:hover{
+    border-left:4px solid rgb(0,128,0);
+}
+
+.notyet:hover{
+    border-right:4px solid rgb(255,0,0);
+}
+.Video{
+    display: none;
+}
