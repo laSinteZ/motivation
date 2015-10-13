@@ -59,14 +59,14 @@ var motivOrDemotiv = function(){
 };
 
 var motivation = function(){
-    document.getElementById("yn").innerHTML="Ты сделал это?";
+    showYesNo();
     document.getElementById("motivation").innerHTML=getRandomWord(motivWords);
     hideDemotivationVideo();
     showMotivationVideo();
 };
 
 var DEmotivation = function(){
-    document.getElementById("yn").innerHTML="Жаль, что ты не сделал это.";
+    showSad();
     document.getElementsByTagName("body")[0].style.color='#808080';
     document.getElementsByTagName("body")[0].style.backgroundColor='#000000';
     document.getElementById("motivation").innerHTML=getRandomWord(demotivWords);
@@ -74,8 +74,30 @@ var DEmotivation = function(){
     showDemotivationVideo();
 };
 
+var showYesNo = function(){
+    document.getElementById("yn").style.display='block';
+    document.getElementById("sad").style.display='none';
+    document.getElementById("good").style.display='none';
+};
+
+var showSad = function(){
+    document.getElementById("sad").style.display='block';
+    document.getElementById("yn").style.display='none';
+    document.getElementById("good").style.display='none';
+};
+
+var showGood = function(){
+    document.getElementById("good").style.display='block';
+    document.getElementById("yn").style.display='none';
+    document.getElementById("sad").style.display='none';
+    document.getElementById("yes").style.display='none';
+    document.getElementById("no").style.display='none';
+};
+
+
+
 var wellDone = function(){
-    document.getElementById("yn").innerHTML="Хорошо, что ты сделал это.";
+    showGood();
     document.getElementsByTagName("body")[0].style.color='#000000';
     document.getElementsByTagName("body")[0].style.backgroundColor='#ffffff';
     document.getElementById("motivation").innerHTML=getRandomWord(congratWords);
