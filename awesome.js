@@ -94,8 +94,6 @@ var showGood = function(){
     document.getElementById("no").style.display='none';
 };
 
-
-
 var wellDone = function(){
     showGood();
     document.getElementsByTagName("body")[0].style.color='#000000';
