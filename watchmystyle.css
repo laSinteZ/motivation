@@ -57,6 +57,10 @@ body{
 .notyet:hover{
     border-right:4px solid rgb(255,0,0);
 }
-.Video{
+.video{
     display: none;
+}
+
+.hidden{
+    display:none;
 }
